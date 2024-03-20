@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>MY MUSIC APP</title>
+</head>
+<body>
+    <div class="app-container">
+      <div class="d-flex flex-column gap-3 justify-content-center align-items-center container w-50 mt-5">
+        <h1>MY MUSIC APP</h1>
+        <input type="text" id="searchBAr" class="btn border form-control form-sm">
+        <button type="submit" onclick="displayMusic()" id="displayMusic" class="btn border w-25">Search Music</button>
+      </div>
+
+      <div id="allMusic" class="d-flex flex-wrap justify-content-center align-items-center">
+  
+      </div>
+    </div>
+    
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBdQPH4dweNBY3Oj9CTaa4XeS7vD0olNPQ",
+          authDomain: "my-first-project-b2285.firebaseapp.com",
+          projectId: "my-first-project-b2285",
+          storageBucket: "my-first-project-b2285.appspot.com",
+          messagingSenderId: "816760619847",
+          appId: "1:816760619847:web:7a758433e1ee039d690262",
+          measurementId: "G-FNQPBML0ZC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script src="index.js"></script>
+</body>
+</html>
